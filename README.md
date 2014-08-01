@@ -28,9 +28,10 @@ Generating the keys:
   
   java -jar KeyczarTool-0.71g-090613.jar pubkey --location=./private --destination=./public
   
+And to encrypt the code we write
 
-  Read the KeyczarTool documentation here: https://code.google.com/p/keyczar/wiki/KeyczarTool
-
+	java -jar KeyczarTool-0.71g-090613.jar usekey --location=./private [APIkey]
+	
 Including Keyczar keys in your client application:
 =================================================
 •	Download and add AndroidKeyczarReader.java to your project from Kenny Root’s GitHub demo: https://github.com/kruton/android-keyczar-demo (https://github.com/kruton/android-keyczar-demo/blob/master/src/com/example/android/keyczardemo/AndroidKeyczarReader.java)
