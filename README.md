@@ -22,11 +22,11 @@ Generating the keys:
   Create a private and public folder
   
   
-  java -jar KeyczarTool-0.71g-090613.jar create --location=./private --purpose=crypt --name="Key" --asymmetric=rsa
+  	java -jar KeyczarTool-0.71g-090613.jar create --location=./private --purpose=crypt --name="Key" --asymmetric=rsa
   
-  java -jar KeyczarTool-0.71g-090613.jar addkey --location=./private --status=primary --size=4096
+	java -jar KeyczarTool-0.71g-090613.jar addkey --location=./private --status=primary --size=4096
   
-  java -jar KeyczarTool-0.71g-090613.jar pubkey --location=./private --destination=./public
+  	java -jar KeyczarTool-0.71g-090613.jar pubkey --location=./private --destination=./public
   
 And to encrypt the code we write
 
