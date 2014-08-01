@@ -28,7 +28,7 @@ Generating the keys:
   
   	java -jar KeyczarTool-0.71g-090613.jar pubkey --location=./private --destination=./public
   
-And to encrypt the code we write
+And to encrypt the APIKey we write, where [APIKey] is your key
 
 	java -jar KeyczarTool-0.71g-090613.jar usekey --location=./private [APIkey]
 	
