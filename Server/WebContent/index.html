@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>RSA Server</title>
+	</head>
+	<body>
+	<table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tr height="100%"><td align="center" width="100%">
+	<table cellpadding="0" cellspacing="0" border="0" width="50%" height="100%"><tr height="100%"><td valign="top" align="left" width="100%" nowrap>
+		<p>
+			<font size="5"><b>Welcome to the Example RSA Decryption Server</b></font>
+		</p>
+		
+		<br>
+		
+		<p>
+			This API offers the following endpoint:
+		</p>
+		<ul>
+			<li><b>Decrypt:</b> /do/decrypt/havepublic?text=[encrypted string]</li>
+		</ul>
+		<p>
+			Sample URL:
+		</p>
+		<ul>
+			<li><b>Have encrypted string:</b> <a href="http://betterdriving.riis.com:8080/RSAServer/do/decrypt/havepublic?text=[encrypted string]">http://betterdriving.riis.com:8080/RSAServer/do/decrypt/havepublic?text=[encrypted string]</a></li>
+		</ul>
+		<p>
+			This API is REST-based and returns JSON data.
+		</p>
+		
+		<hr>
+		<p>Decryption Response Format:</p>
+			<pre><code>{
+  "result": "[decrypted text]"
+}</code></pre>
+
+		<hr>
+		<p>
+			<i>Note: This API is subject to change at any time and is only provided as an example.</i>
+		</p>
+	</td></tr></table>
+	</td></tr></table>
+	</body>
+</html>

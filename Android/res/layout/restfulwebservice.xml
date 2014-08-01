@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/HTTP"
+            android:paddingTop="20px"
+            android:text="Server Response: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView1"
+            android:paddingTop="16px"
+            android:text="Tap either button to get data." />
+
+        <Button
+            android:id="@+id/HTTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="64dp"
+            android:clickable="true"
+            android:cursorVisible="true"
+            android:paddingTop="10px"
+            android:text="HTTP" />
+
+        <Button
+            android:id="@+id/HTTPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TextView1"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/HTTP"
+            android:clickable="true"
+            android:cursorVisible="true"
+            android:paddingTop="10px"
+            android:text="HTTPS" />
+
+    </RelativeLayout>
+
+</ScrollView>
