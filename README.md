@@ -20,11 +20,15 @@ JAR Prerequisites:
 Generating the keys:
 =====================
   mkdir private
+  
   mkdir public
   
   java -jar KeyczarTool-0.71g-090613.jar create --location=./private --purpose=crypt --name="Key" --asymmetric=rsa
+  
   java -jar KeyczarTool-0.71g-090613.jar addkey --location=./private --status=primary --size=4096
+  
   java -jar KeyczarTool-0.71g-090613.jar pubkey --location=./private --destination=./public
+  
 
   Read the KeyczarTool documentation here: https://code.google.com/p/keyczar/wiki/KeyczarTool
 
