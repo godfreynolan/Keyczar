@@ -19,9 +19,8 @@ JAR Prerequisites:
 
 Generating the keys:
 =====================
-  mkdir private
+  Create a private and public folder
   
-  mkdir public
   
   java -jar KeyczarTool-0.71g-090613.jar create --location=./private --purpose=crypt --name="Key" --asymmetric=rsa
   
