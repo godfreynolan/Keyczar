@@ -19,19 +19,14 @@ JAR Prerequisites:
 
 Generating the keys:
 =====================
-•	Navigate in a command prompt/terminal to the location where you saved the KeyczarTool JAR file
+  mkdir private
+  mkdir public
+  
+  java -jar KeyczarTool-0.71g-090613.jar create --location=./private --purpose=crypt --name="Key" --asymmetric=rsa
+  java -jar KeyczarTool-0.71g-090613.jar addkey --location=./private --status=primary --size=4096
+  java -jar KeyczarTool-0.71g-090613.jar pubkey --location=./private --destination=./public
 
-•	Read the KeyczarTool documentation here: https://code.google.com/p/keyczar/wiki/KeyczarTool
-
-•	Create a directory to contain your private key: mkdir private
-
-•	Run the command: java -jar KeyczarTool-0.71g-090613.jar create --location=./private --purpose=crypt --name="Key" --asymmetric=rsa
-
-•	Run the command: java -jar KeyczarTool-0.71g-090613.jar addkey --location=./private --status=primary --size=4096
-
-•	Create a directory to contain your public key: mkdir public
-
-•	Run the command: java -jar KeyczarTool-0.71g-090613.jar pubkey --location=./private --destination=./public
+  Read the KeyczarTool documentation here: https://code.google.com/p/keyczar/wiki/KeyczarTool
 
 Including Keyczar keys in your client application:
 =================================================
